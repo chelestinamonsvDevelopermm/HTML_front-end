@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Form -->
+    <form action="https://mms-it.com">
+      <!-- fieldset to build the yard -->
+      <fieldset>
+        <legend>Student Register Form</legend>
+
+        <input type="hidden" name="reg_id" value="15" />
+
+        <div>
+          <label for="yourName">Your Name</label>
+          <input type="text" id="yourName" name="your_name" />
+        </div>
+
+        <div>
+          <label for="yourEmail">Your Email</label>
+          <input type="email" name="your_email" id="yourEmail" />
+        </div>
+
+        <div>
+          <label for="yourpassword">Your Password</label>
+          <input type="password" id="yourpassword" name="your_password" />
+        </div>
+
+        <div>
+          <label for="bd">Date of Birth</label>
+          <input type="date" id="" name="bd" />
+        </div>
+
+        <div>
+          <label for="amount">Scholar amount</label>
+          <input type="number" id="amount" name="amount" />
+        </div>
+        <hr />
+
+        <!-- gender is not related anything in input that is why take off" for " at label -->
+        <div>
+          <label>Gender</label>
+
+          <div>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label>
+          </div>
+
+          <!-- id = when click the text , there has a effective -->
+          <!-- name = when give "name " there has a choice one between two female and male 
+          value =  data carry -->
+        </div>
+        <hr />
+
+        <!-- multiple choice -->
+        <div class="">
+          <label for="checkbox">Your Current Skill</label>
+
+          <div>
+            <input type="checkbox" id="html" name="skill" value="html" />
+            <label for="html">HTML</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="css" name="skill" value="css" />
+            <label for="css">CSS</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="css" name="skill" value="js" />
+            <label for="js">JS</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="country">Select Country</label>
+          <select name="country" id="Country">
+            <option value="mm">Myanmar</option>
+            <option value="cn">China</option>
+            <option value="kr">Korea</option>
+            <option value="usa">United State of America</option>
+          </select>
+        </div>
+
+        <hr />
+        <label for=""><Address></Address></label>
+        <textarea name="Address" id="Address" cols="35" rows="3"></textarea>
+        <hr>
+        <input type="file">
+
+        <hr>
+        <button>Register</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
